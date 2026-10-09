@@ -1,0 +1,17 @@
+{
+  "name": "ARTEX cloud evaluation",
+  "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+  "features": {
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {}
+  },
+  "forwardPorts": [8787],
+  "portsAttributes": {
+    "8787": {
+      "label": "ARTEX 管理页面",
+      "onAutoForward": "notify",
+      "visibility": "private"
+    }
+  },
+  "postCreateCommand": "bash .devcontainer/prepare.sh",
+  "remoteUser": "vscode"
+}

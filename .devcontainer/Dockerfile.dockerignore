@@ -1,0 +1,14 @@
+.git
+.codespaces-local
+.env
+.env.*
+config.json
+**/node_modules
+web/.next
+web/out
+server/webui/dist
+/artex
+data
+*.db
+transcripts
+bench
